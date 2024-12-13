@@ -31,3 +31,8 @@ To further illustrate the characteristics of spatial-temporal signals across var
 * Intra-homophily rate: probabilities of node pairs exhibiting similar observations at each time step.
 * Inter-homophily rate: probabilities of node pairs exhibiting similar observations across adjacent time steps
 * Homophily continuity: probabilities of node pairs maintaining close observations within adjacent time steps
+
+Consequently, the assortative property investigation of seven datasets is presented in Figure below:
+
+
+The statistics in the Figure suggest that diverse and dynamic node-wise correlations are ubiquitous across different spatial-temporal graph datasets. In summary, most prevailing GNN-based models, which focus on passing low-frequency information, are suboptimal for real-world dynamic systems.
