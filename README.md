@@ -10,6 +10,17 @@ Our code is based on Python version 3.9.7 and PyTorch version 1.10.1. Please mak
 
 ## Data 
 
-Traffic: We utilize four widely studied traffic forecasting datasets: PeMS03, PeMS04, PeMS07, and PeMS08. PeMS stands for the Caltrans Performance Measurement System, which measures highway traffic in California in real-time every 30 seconds. All datasets are aggregated into 5-minute intervals, resulting in 288 data points per day.
+Traffic: We utilize four widely studied traffic forecasting datasets: PeMS03, PeMS04, PeMS07, and PeMS08. PeMS stands for the Caltrans Performance Measurement System, which measures highway traffic in California in real-time every 30 seconds. All datasets are aggregated into 5-minute intervals, resulting in 288 data points per day. Download the data [STSGCN_data.tar.gz](https://pan.baidu.com/s/1ZPIiOM__r1TRlmY4YGlolw) with code: `p72z`
 
-Climate: KnowAir documents weather observations every 3 hours, encompassing a dataset that spans from 2015 to 2018 and covers 184 major cities in China. We use three meteorological characteristics from the KnowAir dataset, including U wind components, urban temperature recordings, and PM2.5 concentrations, which we denote as KA-UW, KA-TEMP, and KA-PM$_{2.5}$.
+Climate: KnowAir documents weather observations every 3 hours, encompassing a dataset that spans from 2015 to 2018 and covers 184 major cities in China. We use three meteorological characteristics from the KnowAir dataset, including U wind components, urban temperature recordings, and PM2.5 concentrations, which we denote as KA-UW, KA-TEMP, and KA-PM2.5$. Download dataset **KnowAir** from [Google Drive](https://drive.google.com/open?id=1R6hS5VAgjJQ_wu8i5qoLjIxY0BG7RD1L) or [Baiduyun](https://pan.baidu.com/s/18D6Etl5Lm1E4vOLVrX0ZAw) with code `t82d`.
+
+
+| Datasets   | Node | Interval | Time Range       | Time Steps |
+|------------|------|----------|------------------|------------|
+| PeMS03     | 358  | 5min     | 9/1/2018-11/30/2018 | 26208     |
+| PeMS04     | 307  | 5min     | 1/1/2018-2/28/2018  | 16992     |
+| PeMS07     | 883  | 5min     | 5/1/2017-8/31/2017  | 28224     |
+| PeMS08     | 170  | 5min     | 7/1/2016-8/31/2016  | 17856     |
+| KA-UW      | 184  | 3h       | 1/1/2015-12/31/2018 | 11688     |
+| KA-TEMP    | 184  | 3h       | 1/1/2015-12/31/2018 | 11688     |
+| KA-PM2.5   | 184  | 3h       | 1/1/2015-12/31/2018 | 11688     |
