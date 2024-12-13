@@ -28,4 +28,6 @@ Climate: KnowAir documents weather observations every 3 hours, encompassing a da
 ## Assortative Property Investigation
 To further illustrate the characteristics of spatial-temporal signals across various datasets, we use feature similarity between nodes as a homophily measure to statistically analyze their assortative properties based on the constructed graphs. Specifically, we have defined the following indicators:
 
-### Intra-homophily rate: probabilities of node pairs exhibiting similar observations at each time step.
+* Intra-homophily rate: probabilities of node pairs exhibiting similar observations at each time step.
+* Inter-homophily rate: probabilities of node pairs exhibiting similar observations across adjacent time steps
+* Homophily continuity: probabilities of node pairs maintaining close observations within adjacent time steps
