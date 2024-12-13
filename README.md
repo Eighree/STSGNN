@@ -34,5 +34,6 @@ To further illustrate the characteristics of spatial-temporal signals across var
 
 Consequently, the assortative property investigation of seven datasets is presented in Figure below:
 
+<img src="./FigureA.png" width="75%">
 
 The statistics in the Figure suggest that diverse and dynamic node-wise correlations are ubiquitous across different spatial-temporal graph datasets. In summary, most prevailing GNN-based models, which focus on passing low-frequency information, are suboptimal for real-world dynamic systems.
