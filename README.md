@@ -37,3 +37,9 @@ Consequently, the assortative property investigation of seven datasets is presen
 <img src="./FigureA.png" width="75%">
 
 The statistics in the Figure suggest that diverse and dynamic node-wise correlations are ubiquitous across different spatial-temporal graph datasets. In summary, most prevailing GNN-based models, which focus on passing low-frequency information, are suboptimal for real-world dynamic systems.
+
+## Construction of Coefficient Set
+In this work, we incorporate both the spatial and temporal information of the input signal to adaptively generate the coefficients of Bernstein bases, thus achieving specialized 2-D spectral filtering for the input signal. For the spatial aspect, given the varying time intervals across different datasets, we employ different methods to capture time-related information. For traffic datasets, we concatenate two temporal features, i.e., time-of-day (1 to 288) and day-of-week (1 to 7), to form the temporal embedding. For climate datasets, considering that this dataset is not sensitive to the day of the week, we only adopt time-of-day (1 to 8) to form the temporal embedding.
+
+## Details about variants V-OLP and V-SS
+For variant V-OLP, we only adopt low-pass filtering for spatial-temporal signal process. To be specific, we set $\theta_{00} = 1$ and other $\theta_{pq}$ = 0 to achieve the low-pass filtering formulated as $\frac{1}{2^{P+Q}}(2I_{s}-L_{s})^{P}\times_{2}^{2}(2I_{t}-L_{t})^{Q}\times_{1}^{2}\mathcal{X}$.
